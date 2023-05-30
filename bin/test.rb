@@ -1,3 +1,5 @@
+require_relative '../env.rb'
+
 author1 = Author.new("idris")
 author2 = Author.new("Jane")
 
