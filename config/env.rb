@@ -1,3 +1,3 @@
-require_relative 'author.rb'
-require_relative 'magazine.rb'
-require_relative 'article.rb'
+require_relative '../lib/author'
+require_relative '../lib/magazine'
+require_relative '../lib/article'
