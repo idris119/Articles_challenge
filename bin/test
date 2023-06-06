@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+require_relative '../lib/article.rb '
+require_relative '../lib/ author.rb'
+require_relative '../lib/magazine.rb'
+
+
+
+
+
+author = Author.new("idris")
+
+magazine1 = Magazine.new("daily nation", "Category A")
+standard = Magazine.new("standard ", "Category B")
+
+author.add_article(daily_nation, "Article 1")
+author.add_article(daily_nation, "Article 2")
+author.add_article(standard, "Article 3")
+
+
+puts "Author name: #{author.name}"
+puts "Author articles: #{author.articles.map(&:title)}"
+puts "Author magazines: #{author.magazines.map(&:name)}"
+puts "Author topic areas: #{author.topic_areas}"
+
+puts "Magazine name: #{daily_nation.name}"
+puts "Magazine category: #{daily_nation.category}"
+puts "Magazine contributors: #{daily_nation.contributors.map(&:name)}"
+puts "Magazine article titles: #{daily_nation.article_titles}"
+puts "Magazine contributing authors: #{daily_nation.contributing_authors.map(&:name)}"
